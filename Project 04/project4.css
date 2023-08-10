@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+  font-family: Copperplate, Papyrus, fantasy;
+}
+  /* Styling the header of the page*/
+.navigationbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #393534;
+    padding: 20px;
+    position: sticky;
+    top: 0 ;
+    width: 100%;
+    
+}
+
+.rightelement {
+  margin: 0 30px;
+  padding-right: 80px;
+  padding-left: 50px;
+    
+ 
+    
+}
+
+.leftelement{
+  margin: 0 30px;
+
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  z-index: 1;
+  color: #393534;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #393534;
+
+}
+
+.leftelement:hover .dropdown-content {
+  display: block;
+}
+
+.leftelement:hover{
+  background-color: #3e8e41;
+}
+
+/*Making the header buttons interactive*/
+
+.navigationbar a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  
+
+}
+
+.navigationbar a:hover{
+  padding: 1px;
+  margin: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+/*Styling the banner of the landing page*/
+
+/*Making the button interactive*/
+
+.banner a{
+  text-decoration: none;
+  color: white;
+  background-color: rgba(169, 169, 169, 0.5);
+  border-radius: 25px;
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  transition-property: padding;
+  transition-duration: 2s;
+  transition-delay: 1s;
+
+
+ 
+}
+
+.banner a:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  width: 10%;
+  padding: 2rem;
+  
+}
+
+/*Adding background image as banner*/
+
+
+.banner{
+  background-color: aqua;
+  background-image:url(./images/images/banner.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: 0 50%;
+  
+  padding-top: 125px;
+  padding-bottom: 125px;
+  color: white;
+  
+  text-align: center;
+}
+
+/*Changing all three layers to flexbox*/
+
+.layer2, .layer3{
+
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+
+}
+
+/*Styling left elements of layer 01 and layer 03*/
+
+.l1left, .l3left{
+
+  text-align: left;
+  padding: 100px;
+  margin-right: -50px;
+
+}
+
+/*Styling right elements of layer 01*/
+
+.l1right{
+  padding: 100px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  background-image: url(./images/images/01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 222px;
+  height: 200px;
+
+}
+
+/*Styling left elements of layer 02*/
+
+.l2left{
+
+  padding: 100px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  background-image: url(./images/images/02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 160px;
+  height: 200px;
+
+}
+
+/*Styling right elements of layer 02*/
+
+.l2right{
+  text-align: left;
+  padding: 100px;
+  margin-left: 175px;
+}
+
+/*Styling right elements of layer 03*/
+
+.l3right{
+  padding: 100px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  background-image: url(./images/images/03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 175px;
+  height: 200px;
+}
+
+/*Styling the footer of the page*/
+
+.footer{
+  background-color: #393534;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/*End of CSS*/
+
+
+/* Layer 1 */
+.layer1, .layer3, .layer2{
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layer-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.layer-content{
+  max-width: 65%;
+  text-align: justify;
+}
+
+
+.layer-image-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer-image{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}

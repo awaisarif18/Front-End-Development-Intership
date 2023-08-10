@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans';
+}
+
+.leftpage{
+    display: inline-block;
+    width: 48%;
+    height: 500px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 3px 3px 6px black;
+    margin-left: 1%;
+    
+    
+    padding: 50px;
+   position: relative;
+   margin-top: 30px;
+   
+}
+
+
+.rightpage{
+    display:inline-block ;
+    
+    width: 48%;
+    height: 500px;
+    padding: 10px;
+    margin-top: 30px;
+    
+    
+    background-color: white;
+    
+    align-self: center;
+    box-shadow: 3px 3px 6px black;
+    position: absolute;
+    
+
+}
+
+.iobuttons{
+    display: block;
+    margin: 2px auto;
+    padding: 5px;
+    width: 20;
+    box-shadow: 2px 2px black;
+    border-radius: 5px;
+
+}
+
+.signbutton{
+
+ color: white;
+  
+  display: block;
+  text-align: center;
+  
+  margin: 0 auto;
+  font-size: x-small;
+  background-color: #4169e2;
+  box-shadow: 2px 2px rgba(0,0,0, 0.5);
+  border-radius: 2px;
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 5px;
+  
+    
+}
+.signbutton :hover{
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    
+    color: white;
+}
+
+.page{
+    
+
+}
+
+.logos {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
