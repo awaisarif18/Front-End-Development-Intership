@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+  font-family: sans-serif;
+}
+
+/*Styling header*/
+
+.header{
+    background-color: #00bfb1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/*Handling main page by using flexbox*/
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3%;
+    height: 570px;  
+}
+
+/*Styling left page*/
+
+.aside{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #6add68;
+}
+
+.aside-content{
+    text-align: center;
+}
+
+.article-heading{
+
+   text-align: center;
+}
+
+/*Stylinh right-page*/
+.article{
+
+    background-color: #fdb140;  
+    display: grid;
+    align-items: end;
+
+}
+
+
+
+/*Handling and Positioning the images on right page*/
+.img-container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 1rem;
+    grid-gap: 4rem;
+    margin: 0 auto;
+    
+
+}
+
+/*Styling the images*/
+
+.img{
+    background-color: #fdd339;
+    padding: 90px;
+    border-radius: 5px;
+    text-align: center;
+   /* background-image: url(./03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+  
+}
+
+/*Styling the footer of the page*/
+
+.footer{
+    background-color: #00bfb1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/*End of CSS*/

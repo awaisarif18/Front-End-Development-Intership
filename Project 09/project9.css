@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+  background-color: #111111;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+/*Stlying the header of the page*/
+
+.header{
+    background-color: #111111;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 33px 0 0 0;
+}
+
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 80%;
+    background-color: #111111;
+    grid-gap: 2rem;
+    margin: 0 auto;
+    padding: 1rem;
+   
+
+}
+
+.section{
+    background-color: #222222;
+    display: grid;
+    justify-items: center;
+    color: white;
+    border-radius: 5px;
+}
+
+#heading{
+    margin: 5px auto 15px auto;
+    color: #d46906;
+
+}
+
+#para{
+    overflow: auto;
+    height: 125px;
+    text-align: center;
+
+}
+
+.section img{
+    width: 10%;
+    margin: 15px auto;
+    
+}
+
+.section:hover{
+    background-color: #d46906;
+    cursor: pointer;
+
+    #heading{
+        color: white;
+    }
+}
+

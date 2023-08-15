@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title, .footer{
+    background-color: #deab00;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: rgb(192, 185, 185);
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+/*Styling the header buttons*/
+
+.header button{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px gray;
+    border: none;
+    color: #deab00;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 7px 2px;
+    cursor: pointer;
+}
+
+/*Handling the three cards in the container*/
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: gray;
+    box-shadow: 3px 3px 3px 3px gray;
+    grid-gap: 1rem;
+    padding-bottom: 20px;
+    
+}
+
+
+/*Handling the image in each card*/
+
+.card-container img{
+    width: 90%;
+    margin: 5%;
+}
+
+/*Styling and centering content of each card*/
+
+.card{
+    display: grid;
+    justify-items: center;
+    background-color: white;
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 2px 2px 2px 2px rgb(220, 220, 220, 0.5);
+   
+}
+
+/*Adding some style to make cards interactive*/
+
+.card:hover{
+    box-shadow: 3px 3px 3px 3px rgba(220, 220, 220, 1);
+
+}
+
+/*Styling the buttons in each card*/
+
+.card-container button{
+    background-color: rgb(189, 189, 189);
+    box-shadow: 1px 1px 1px 1px rgb(107, 105, 105);
+    border: none;
+    color: black;
+    padding: 15px 90px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/*Adjusting paragraph to make card responsive*/
+
+#para{
+    overflow: auto;
+    height: 125px;
+    text-align: center;
+}
+
