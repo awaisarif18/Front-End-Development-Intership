@@ -1,0 +1,555 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/*Styling the header of the page*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90rem;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+/* Styling Company Name */
+.company {
+  font-family: "Rubik", sans-serif;
+  margin: 0 10px;
+}
+
+.wiki {
+  color: gray;
+}
+
+/* Adjusting width of right elements on navigation */
+.navigation {
+  width: 50rem;
+}
+/* Styling navigation elements */
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+/* Customizing the Log-in and Sign -Up buttons */
+.log-in {
+  background-color: white;
+  color: #368098;
+  border-color: #368098;
+  border: 1px solid#368098;
+  border-radius: 25px;
+}
+
+.sign-up {
+  background-color: #368098;
+  color: white;
+  border: 1px solid #368098;
+  border-radius: 25px;
+}
+
+/* Making the dropdown menu */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(176, 172, 172);
+}
+
+/* Giving a gray background hover effect */
+
+.navigation a:hover {
+  background-color: rgb(176, 172, 172);
+}
+
+/*Styling the banner of the page*/
+.banner {
+  height: 300px;
+  background-image: url(./banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  animation: slide-down 3s ease-out 0.8s 1 normal forwards;
+}
+
+.banner-text {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.banner h1,
+.animated-heading {
+  animation: swipe 3s linear 0.8s 1 normal forwards;
+}
+
+.animated-heading {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+/* Adjusting width and centering the content of body in main container */
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*First layer of content: About*/
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  margin: 3rem auto;
+}
+
+.what-we-do {
+  text-align: justify;
+}
+
+.contact {
+  max-width: 175px;
+  animation: slid 3s ease-out 0.8s 1 normal forwards;
+}
+
+.what-we-do p,
+.contact p {
+  padding: 10px 0;
+}
+
+p::selection {
+  background-color: rgb(249, 249, 133);
+}
+
+.what-we-do button {
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-color: gray;
+  cursor: pointer;
+  animation-name: boton;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  opacity: 0.3;
+  transition: opacity 2s linear 0.5s;
+}
+
+.what-we-do button:hover {
+  /* animation: tutulu 2s ease-in 0s infinite alternate-reverse backwards;*/
+  opacity: 1;
+}
+
+/*Second layer of content: Services Section*/
+
+.services {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  grid-gap: 1rem;
+}
+
+.image {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img1 {
+  background-image: url(./bespoke.jpg);
+}
+
+.img2 {
+  background-image: url(./gluten.jpg);
+  background-position: 0px 16%;
+}
+
+.img3 {
+  background-image: url(./farm.jpg);
+}
+
+.bespoke div,
+.gluten-free div,
+.farm-to-table div {
+  margin: 1rem auto;
+}
+
+/*Setting animations for second layer*/
+
+.bespoke {
+  animation: swipe 3s linear 0.8s 1 normal forwards;
+}
+
+.farm-to-table {
+  animation: slid 3s ease-out 0.8s 1 normal forwards;
+}
+
+.gluten-free {
+  animation: slide-up 3s ease-out 0.8s 1 normal forwards;
+}
+
+#alignment {
+  text-align: center;
+}
+
+.contact {
+  animation: slid 3s ease-out 0.8s 1 normal forwards;
+}
+
+.what-we-do {
+  animation: swipe 3s linear 0.8s 1 normal forwards;
+}
+
+/*Third layer of content: Gallery showcasing project images*/
+
+.gallery {
+  display: grid;
+
+  margin: 20px auto;
+  justify-content: center;
+
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-gap: 1.5rem;
+  /* animation: slid 3s ease-out 0.7s 1 normal forwards;
+    position: relative;*/
+}
+
+.gallery div {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.work1 {
+  background-image: url(./work/1.jpg);
+  animation: swipe 3s linear 0.9s 1 normal forwards;
+}
+
+.work2 {
+  background-image: url(./work/2.jpg);
+  background-position: 45% 0;
+  animation: swipe 3s linear 0.9s 1 normal forwards;
+}
+
+.work3 {
+  background-image: url(./work/3.jpg);
+  animation: slid 3s ease-out 0.9s 1 normal forwards;
+}
+
+.work4 {
+  background-image: url(./work/4.jpg);
+  animation: slid 3s ease-out 0.9s 1 normal forwards;
+}
+
+.work5 {
+  background-image: url(./work/5.jpg);
+  animation: swipe 3s linear 0.9s 1 normal forwards;
+}
+
+.work6 {
+  background-image: url(./work/6.jpg);
+  animation: swipe 3s linear 0.9s 1 normal forwards;
+}
+
+.work7 {
+  background-image: url(./work/7.jpg);
+  background-position: 0 22%;
+  animation: slid 3s ease-out 0.9s 1 normal forwards;
+}
+
+.work8 {
+  background-image: url(./work/8.jpg);
+  animation: slid 3s ease-out 0.9s 1 normal forwards;
+}
+
+/* Making the footer */
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 290px;
+}
+
+.footer-left {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 55px;
+}
+
+.footer-paragraph {
+  font-size: 12px;
+}
+
+.table-container a {
+  text-decoration: none;
+  color: black;
+  width: 130px;
+}
+
+.table-headings {
+  font-weight: bold;
+}
+
+.industries,
+.roles,
+.use-cases,
+.resources,
+.col-company {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.table-headings,
+.table-container a {
+  padding: 5px;
+}
+/* Creating media queries for small and large screens */
+
+@media screen and (min-width: 2560px) {
+  .header {
+    width: 158rem;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .header {
+    width: 90rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .header {
+    width: 64rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 300px) {
+  .banner {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .navigation {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 325px;
+  }
+
+  .dropdown-content {
+    left: 65px;
+    top: -10px;
+  }
+
+  .dropdown:active .dropdown-content {
+    display: block;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footer-left {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .table-container {
+    flex-direction: column;
+    align-items: start;
+    font-size: 14px;
+  }
+
+  .table-container a {
+    width: 100%;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+  }
+
+  .contact {
+    margin: 10px auto;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  .gallery > div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact {
+    margin-top: 25px;
+  }
+}
+
+/* Making keyframes for animations */
+
+@keyframes swipe {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slid {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes boton {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: aqua;
+  }
+  50% {
+    background-color: aquamarine;
+  }
+  75% {
+    background-color: azure;
+  }
+  100% {
+    background-color: beige;
+  }
+}
+
+/*@keyframes tutulu {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  75% {
+    transform: rotateZ(270deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}*/
+
+/*End of CSS*/

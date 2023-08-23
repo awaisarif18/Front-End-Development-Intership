@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    font-family: sans-serif;
+}
+
+.main-container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'news news about archi'
+    'news news about archi'
+    'news news design design'
+    'build copy design design'
+    'build copy design design' ;
+    height: 750px;
+    gap: 25px;
+    padding: 10px;
+    background-color: white;
+}
+
+.main-container > div{
+    border-radius: 5px;
+    padding: 3rem 0;  
+}
+
+/*Top left layer*/
+
+.architecture-news{
+    grid-area: news;
+    color: white;
+    background-color: #6c718b;
+    display: grid;
+    align-content: space-around;
+}
+
+.architecture-news > div{
+
+    margin-left: 1.5rem;
+}
+
+.archi-image{
+
+    background-color: azure;
+    padding: 100px;
+    max-width: 200px;
+    background-image: url(./building.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+/*Top middle layer*/
+
+
+.about-us{
+    grid-area: about;
+    background-color: #f1f1f1;
+    display: grid;
+    align-content: space-around;
+    height: 300px;
+}
+
+/*Top right layer*/
+
+
+.green-architecture{
+
+    grid-area: archi;
+    background-image: url(./green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+/*Bottom left layer*/
+
+
+.building{
+    grid-area: build;
+    background-image: url(./build.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Bottom Middle Layer*/
+
+
+.copywriting{
+
+    grid-area: copy;
+    background-color: #f1f1f1;
+    display: grid;
+
+}
+
+.copywriting button{
+    text-decoration: none;
+    background-color: #f81d4e;
+    border: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 30px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.copywriting button:hover{
+    box-shadow: 2px 2px 2px rgba(188, 28, 63, 0.8);
+    
+}
+
+/*Bottom Right Layer*/
+
+
+.design-power{
+
+    grid-area: design;
+    color: white;
+    text-align: right;
+    background-color: #f81d4e;
+    display: grid;
+    align-content: space-between;
+    
+}
+
+.design-image{
+
+    background-color: azure;
+    padding: 100px;
+    max-width: 200px;
+    background-image: url(./me.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+/*Adjusting the alignments and positions of the content*/
+
+.para1{
+    max-width: 40%;
+}
+
+
+.para2{
+    max-width: 60%;
+}
+
+
+
+#alignment{
+    margin-left: 1.5rem;
+}
+
+.alignment{
+    margin: auto 20px auto auto;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .main-container{
+
+       
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'news news'
+        'news news'
+        'news news'
+        'about archi'
+        'about archi'
+        'design design'
+        'design design'
+        'design design'
+        'build copy'
+        'build copy' ;
+        height: 1500px;
+       
+    }
+
+    .architecture-news > div{
+
+        margin: 10px auto;
+    }
+
+
+    .alignment{
+
+        margin: 20px auto;
+        
+    }
+
+    .design-power{
+        text-align: center;
+    }
+
+    .para2{
+        max-width: 80%;
+    }
+
+
+    
+}
