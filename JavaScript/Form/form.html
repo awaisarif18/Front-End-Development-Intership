@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Simple Form</title>
+  </head>
+  <body>
+    <div id="main" class="main-container">
+      <div id="data" class="data-container"></div>
+
+      <form action="" id="my-form" class="form">
+        <p>Name</p>
+        <input type="text" name="firstName" placeholder="Awais" id="nameId" />
+        <p>Last Name</p>
+        <input type="text" name="lastName" placeholder="Arif" id="nameId" />
+        <p>Phone Number</p>
+        <input
+          type="tel"
+          name="phoneNumber"
+          id="numberId"
+          placeholder="+1 (123) 456-7890"
+        />
+
+        <p>Email</p>
+        <input
+          type="email"
+          name="email"
+          placeholder="example@website.com"
+          id="emailId"
+        />
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+    </div>
+
+    <script src="./form.js"></script>
+  </body>
+</html>

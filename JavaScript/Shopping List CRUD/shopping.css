@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 55vw;
+  height: 60vh;
+  margin: 100px auto;
+  box-shadow: 2px 2px 2px 2px gray;
+  text-align: center;
+  overflow: auto;
+}
+
+.main-container::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.heading {
+  color: #2596be;
+  margin: 10px auto;
+}
+
+.form button {
+  text-decoration: none;
+  background-color: #2596be;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#updateButton {
+  display: none;
+}
+
+#submitButton {
+  display: inline;
+}
+
+.inputField {
+  width: 45vw;
+  padding: 10px;
+  border: 1px solid #2596be;
+  background-color: #f1f5f8;
+  border-radius: 5px;
+  border-width: 3px;
+  cursor: pointer;
+}
+
+.inputField:focus {
+  background-color: #bddff8;
+  opacity: 0.8;
+}
+
+#list {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+#list div {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.grocParent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delAll {
+  text-decoration: none;
+  color: rgb(200, 13, 13);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* .listItem {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+} */
+
+#clearButton {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: red;
+  padding: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  /* display: none; */
+}
+
+#editButton,
+.removeButton {
+  cursor: pointer;
+}

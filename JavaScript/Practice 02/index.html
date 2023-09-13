@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 02</title>
+  </head>
+  <body>
+    <div>
+      <img
+        src="./mountains.jpg"
+        alt="Beautiful Mountains"
+        id="image"
+        style="height: 400px; width: auto"
+      />
+      <p id="content">Beautiful Mountains</p>
+      <button id="imgbtn">Next item</button>
+
+      <button id="backColor">Change Background Color</button>
+
+      <script>
+        const image = document.getElementById("image");
+        const content = document.getElementById("content");
+        const imgbtn = document.getElementById("imgbtn");
+        const backColor = document.getElementById("backColor");
+        const wholeBody = document.getElementsByTagName("body")[0];
+
+        const colorArray = [
+          "blue",
+          "pink",
+          "green",
+          "red",
+          "yellow",
+          "black",
+          "wheat",
+        ];
+
+        function randomNumber(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+
+        const minimum = 0;
+        const maximum = 6;
+        //for (i = 0; i < 7; i++)
+
+        let i = 0;
+
+        backColor.addEventListener("click", function () {
+          const n = Math.floor(Math.random() * 7);
+          wholeBody.style.backgroundColor = colorArray[n];
+        });
+
+        imgbtn.addEventListener("click", function () {
+          image.src = "./lake.jpg";
+          content.innerHTML = "Beautiful Lake";
+          imgbtn.innerHTML = "Previous Item";
+          image.style.width = "400px";
+        });
+      </script>
+    </div>
+  </body>
+</html>

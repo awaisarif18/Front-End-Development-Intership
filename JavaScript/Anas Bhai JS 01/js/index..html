@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="access-me"></div>
+  <div class="access-us"></div>
+  <div class="access-us"></div>
+  <div class="access-us"></div>
+  <div class="access-us"></div>
+  <img id="image" src="./RISE MIILL (7).png" alt="image-1" height="300px" width="300px">
+  <button id="click-me">Change Image</button> -->
+    <script>
+      const newElement = document.createElement("div");
+      newElement.innerHTML = "Created by Javascript";
+      newElement.style.color = "blue";
+      newElement.style.cursor = "pointer";
+      newElement.onclick = function () {
+        newElement.style.color = "red";
+      };
+      document.write("working with Js");
+
+      const body = document.getElementsByTagName("body")[0];
+      body.appendChild(newElement);
+      // const myDiv = document.getElementById('access-me')
+      // myDiv.innerHTML='Hello World'
+      // myDiv.style.color = 'red'
+      // myDiv.style.fontSize = '24px'
+
+      // myDiv.addEventListener('click', clickFunction)
+
+      // function clickFunction(){
+      //   console.log("CLICKED")
+      // }
+      // console.log(myDiv)
+      // Multiple Elements
+      // const accessUs = document.getElementsByClassName('access-us')
+      //  for(let i =0; i< accessUs.length; i++){
+      //   accessUs[i].innerHTML = i+1
+      //  }
+
+      // Image Practice
+      // const image = document.getElementById('image')
+      // const button = document.getElementById('click-me')
+
+      // button.addEventListener('click', changeImage)
+
+      // function changeImage(){
+      //   if(image.alt === 'image-2'){
+      //     image.src = './RISE MIILL (7).png'
+      //     image.alt = 'image-1'
+      //     return
+      //   }
+      //   image.src = './RISE MIILL.png'
+      //   image.alt = 'image-2'
+      // }
+    </script>
+  </body>
+</html>
